@@ -5,8 +5,16 @@ import socket
 
 def check_localhost():
     localhost = socket.gethostbyname('localhost')
-    return localhost == '127.0.0.1'
-
+        print(localhost)
+   if check_localhost == print(localhost):
+        return true
+   else:
+        return  false
 def check_connectivity():
     request = requests.get("http://www.google.com")
-    return 200
+    print(request)
+    print(request.status_code)
+    if check_connectivity == 200:
+        return true 
+    else:
+        return false
